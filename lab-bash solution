@@ -1,0 +1,176 @@
+User@DESKTOP-MO9MM92 MINGW64 ~
+$ mkdir IH-Labs
+
+User@DESKTOP-MO9MM92 MINGW64 ~
+$ ls
+'3D Objects'/
+ Anwendungsdaten@
+ AppData/
+'Application Data'/
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Druckumgebung@
+'Eigene Dateien'@
+ Favorites/
+ IH-Labs/
+ IntelGraphicsProfiles/
+ Links/
+'Lokale Einstellungen'@
+ Music/
+ NTUSER.DAT
+ NTUSER.DAT{9f2ef522-b307-11ed-8467-a48d6e5bb1da}.TM.blf
+ NTUSER.DAT{9f2ef522-b307-11ed-8467-a48d6e5bb1da}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{9f2ef522-b307-11ed-8467-a48d6e5bb1da}.TMContainer00000000000000000002.regtrans-ms
+ Netzwerkumgebung@
+ OneDrive/
+ Pictures/
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+ Startmenü@
+ Tracing/
+ Videos/
+ Vorlagen@
+ Zotero/
+ anaconda3/
+'my pythons stuffs'/
+ myexample.py
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+User@DESKTOP-MO9MM92 MINGW64 ~
+$ git clone https://github.com/Suldinho/lab-bash.git
+Cloning into 'lab-bash'...
+remote: Enumerating objects: 40, done.
+remote: Total 40 (delta 0), reused 0 (delta 0), pack-reused 40
+Receiving objects: 100% (40/40), 12.63 KiB | 1.26 MiB/s, done.
+Resolving deltas: 100% (11/11), done.
+
+User@DESKTOP-MO9MM92 MINGW64 ~
+$ ls
+'3D Objects'/         Documents/               Links/                                                                                         Netzwerkumgebung@   Startmenü@  'my pythons stuffs'/
+ Anwendungsdaten@     Downloads/              'Lokale Einstellungen'@                                                                         OneDrive/           Tracing/     myexample.py
+ AppData/             Druckumgebung@           Music/                                                                                         Pictures/           Videos/      ntuser.dat.LOG1
+'Application Data'/  'Eigene Dateien'@         NTUSER.DAT                                                                                     Recent@             Vorlagen@    ntuser.dat.LOG2
+ Contacts/            Favorites/               NTUSER.DAT{9f2ef522-b307-11ed-8467-a48d6e5bb1da}.TM.blf                                       'Saved Games'/       Zotero/      ntuser.ini
+ Cookies@             IH-Labs/                 NTUSER.DAT{9f2ef522-b307-11ed-8467-a48d6e5bb1da}.TMContainer00000000000000000001.regtrans-ms   Searches/           anaconda3/
+ Desktop/             IntelGraphicsProfiles/   NTUSER.DAT{9f2ef522-b307-11ed-8467-a48d6e5bb1da}.TMContainer00000000000000000002.regtrans-ms   SendTo@             lab-bash/
+
+User@DESKTOP-MO9MM92 MINGW64 ~
+$ cd lab-bash
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash (master)
+$ echo "hello world"
+hello world
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash (master)
+$ rmdir new_dir
+rmdir: failed to remove 'new_dir': No such file or directory
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash (master)
+$ rmkdir new_dir
+bash: rmkdir: command not found
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash (master)
+$ mkdir new_dir
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  new_dir/  outputs/  readme.md
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash (master)
+$ rmdir new_dir
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash (master)
+$ cd lorem new_dir
+bash: cd: too many arguments
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash (master)
+$ cd lorem
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem.txt  sed.txt
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash/lorem (master)
+$ cp sed.txt
+cp: missing destination file operand after 'sed.txt'
+Try 'cp --help' for more information.
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash/lorem (master)
+$ cp sed.txt  ~/lab-bash/lorem (master)
+bash: syntax error near unexpected token `('
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash/lorem (master)
+$ cd ~/lab-bash/lorem (master)
+bash: syntax error near unexpected token `('
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem.txt  sed.txt
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash/lorem (master)
+$ cp; /lab-bash/lorem (master)- ~/lab-bash/lorem (master)
+bash: syntax error near unexpected token `master'
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem.txt  sed.txt
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash/lorem (master)
+$ cp ~/lab-bash/lorem (master);/lab-bash/lorem (master)
+bash: syntax error near unexpected token `('
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem.txt  sed.txt
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash/lorem (master)
+$ cp  ~/lab-bash/lorem (master)
+bash: syntax error near unexpected token `('
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash/lorem (master)
+$ cp ~/lab-bash/lorem (master)
+bash: syntax error near unexpected token `('
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem.txt  sed.txt
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash/lorem (master)
+$ cp  ~/lab-bash/lorem (master)
+bash: syntax error near unexpected token `('
+
+User@DESKTOP-MO9MM92 MINGW64 ~/lab-bash/lorem (master)
+$ print (' ~/lab-bash/lorem (master) ~/lab-bash/lorem (master)~/lab-bash/lorem (master))
+> ls
+>
+>
+>
+>
+>
+>
+> §ls
+> $cp homo homini lupus
+>
+> $ls
+>
+>
+>
